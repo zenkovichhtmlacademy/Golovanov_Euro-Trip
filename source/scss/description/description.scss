@@ -1,0 +1,243 @@
+.description__names-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  gap: 0 100px;
+  margin: 0;
+  padding: 0 0 10px;
+
+  border-bottom: 1px solid rgba($lighter-black, 0.3%);
+  list-style: none;
+}
+
+.description__names-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: rgba($lighter-black, 0.3%);
+  text-decoration: none;
+}
+
+.description__names-link--active {
+  color: $red;
+}
+
+.description__wrapper:nth-child(1) {
+  padding-top: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.description__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.description__item {
+  display: grid;
+  grid-template-columns: minmax(auto, 370px) 1fr;
+  column-gap: 100px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+  }
+}
+
+.description__title {
+  padding-bottom: 17px;
+  line-height: 90px;
+
+  &::after {
+    width: 175px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 20px;
+
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.description__text {
+  margin: 0 0 50px;
+
+  letter-spacing: -0.466667px;
+  color: rgba($lighter-black, 0.7%);
+
+  @media (max-width: $tablet-width) {
+    margin: 0 0 20px;
+
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 19px;
+
+    text-align: center;
+  }
+}
+
+.description__button {
+  width: 250px;
+  padding: 30px 10px;
+
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 10px;
+    margin: 0 auto;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 19px 10px;
+    width: 288px;
+  }
+}
+
+.description__wrapper:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.description__img-wrapper {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+
+  @media (max-width: $tablet-width) {
+    justify-self: center;
+    margin: 0 -21px;
+  }
+}
+
+.description__img {
+  width: 430px;
+  height: 596px;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+    height: 415px;
+
+    object-fit: cover;
+  }
+}
+
+.description__review {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: start;
+  justify-self: end;
+  padding: 30px;
+  margin: 114px 0 0;
+  width: 382px;
+
+  background-color: $white;
+
+  @media (max-width: $tablet-width) {
+    align-self: auto;
+    justify-self: center;
+    margin: 80px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 268px;
+    padding: 30px 20px;
+    margin: 50px 0 0;
+  }
+}
+
+.description__review-title {
+  padding: 0 0 14px;
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.691667px;
+
+  &::after {
+    width: 68px;
+    background-color: $red;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.description__review-text {
+  margin: 0 0 30px;
+
+  font-size: 14px;
+  letter-spacing: -0.408333px;
+  color: rgba($lighter-black, 0.7%);
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 17px;
+
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.description__person-wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.description__review-photo {
+  width: 38px;
+  height: 38px;
+  margin-right: 16px;
+
+  border-radius: 50%;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.description__review-name {
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.466667px;
+  color: $lighter-black;
+  font-style: normal;
+}

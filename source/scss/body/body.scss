@@ -1,0 +1,19 @@
+.body__header {
+  z-index: 1;
+
+  background-color: $white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.body__header .container {
+  position: relative;
+
+  display: flex;
+  padding-top: 34px;
+  padding-bottom: 29px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+}

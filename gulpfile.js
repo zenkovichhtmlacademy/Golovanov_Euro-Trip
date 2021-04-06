@@ -28,7 +28,7 @@ exports.html = html;
 // Styles
 
 const stylesBuild = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/scss/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -42,7 +42,7 @@ const stylesBuild = () => {
 exports.stylesBuild = stylesBuild;
 
 const stylesDev = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/scss/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -95,7 +95,8 @@ const sprite = () => {
     ]))
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"));
 }
 
 exports.sprite = sprite;
@@ -120,7 +121,8 @@ const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}"
+    "source/img/**/*.{jpg,png}",
+    "source/img/svg/*.svg",
   ], {
     base: "source"
   })
@@ -156,7 +158,7 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("stylesDev"));
+  gulp.watch("source/scss/**/*.scss", gulp.series("stylesDev"));
   gulp.watch("source/*.html", gulp.series("html"));
   gulp.watch("source/js/*.js", gulp.series("scripts"));
   gulp.watch("source/img/**/*", gulp.series("copy", "sprite"), sync.reload());
@@ -187,7 +189,7 @@ exports.default = gulp.series(
     html,
     stylesDev,
     sprite,
-    scripts,
+    // scripts,
   ),
   gulp.series(
     createWebP, server, watcher

@@ -1,10 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Путешествие по Европе</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="page__body body">
+  <header class="body__header header">
+    <div class="container">
+      <a class="header__logo">
+        <img class="header__logo-img" src="img/svg/logo.svg" width="58" height="22" alt="Логотип «Путешествие по Европе»">
+      </a>
+      <div class="header__wrapper">
+        <nav class="header__nav main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">О путешествии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Цены</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__phone-wrapper phone">
+          <svg class="phone__icon" width="17" height="24">
+            <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          <a class="phone__number" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="body__main main">
+    <section class="main__about-us about-us">
+      <div class="about-us__title-wrapper">
+        <div class="container">
+          <h1 class="about-us__title">Путешествие по Европе</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about-us__description-wrapper">
+          <p class="about-us__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы,
+            а
+            также потрясающая красота природы.</p>
+          <a class="about-us__button button" href="#">смотреть тур</a>
+        </div>
+      </div>
+    </section>
+    <section class="main__places places">
+      <div class="container">
+        <h2 class="places__title title">Места посещения</h2>
+        <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <ul class="places__list">
+          <li class="places__item">
+            <a class="places__link" href="">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/greece-places-tablet.jpg">
+                <img class="places__img" src="img/greece-places.jpg" width="350" height="430" alt="Фотография дома на скале в Греции">
+              </picture>
+              <span class="places__img-description">Греция</span>
+              <div class="places__link-wrapper">
+                <span class="places__link-details">смотреть подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link" href="">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/albania-places-tablet.jpg">
+                <img class="places__img" src="img/albania-places.jpg" width="350" height="430" alt="Фотография пляжа в Албании">
+              </picture>
+              <span class="places__img-description">Албания</span>
+              <div class="places__link-wrapper">
+                <span class="places__link-details">смотреть подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link" href="">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/macedonia-places-tablet.jpg">
+                <img class="places__img" src="img/macedonia-places.jpg" width="350" height="430" alt="Фотография храма у моря в Македонии">
+              </picture>
+              <span class="places__img-description">Македония</span>
+              <div class="places__link-wrapper">
+                <span class="places__link-details">смотреть подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link" href="">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/montenegro-places-tablet.jpg">
+                <img class="places__img" src="img/montenegro-places.jpg" width="350" height="430" alt="Фотография леса и реки в Черногории">
+              </picture>
+              <span class="places__img-description">Черногория</span>
+              <div class="places__link-wrapper">
+                <span class="places__link-details">смотреть подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="places__item">
+            <a class="places__link" href="">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/croatia-places-tablet.jpg">
+                <img class="places__img" src="img/croatia-places.jpg" width="350" height="430" alt="Фотография пещеры в Хорватии">
+              </picture>
+              <span class="places__img-description">Хорватия</span>
+              <div class="places__link-wrapper">
+                <span class="places__link-details">смотреть подробнее</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="places__description description">
+
+        <div class="container container--names-margin">
+          <ul class="description__names-list">
+            <li class="description__names-item">
+              <a class="description__names-link description__names-link--active" href="">Греция</a>
+            </li>
+            <!--            <li class="description__names-item">
+                          <a class="description__names-link" href="">Албания</a>
+                        </li>
+                        <li class="description__names-item">
+                          <a class="description__names-link" href="">Македония</a>
+                        </li>
+                        <li class="description__names-item">
+                          <a class="description__names-link" href="">Черногория</a>
+                        </li>
+                                    <li class="description__names-item">
+                                      <a class="description__names-link" href="">Хорватия</a>
+                                    </li>-->
+          </ul>
+        </div>
+
+        <div class="container">
+          <ul class="description__list">
+            <li class="description__item">
+              <div class="description__wrapper">
+                <h3 class="description__title title">Греция</h3>
+                <p class="description__text">На севере Греции находится один из крупнейших комплексов монастырей,
+                  расположенных на вершинах скал. Название
+                  его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего
+                  путешествия в
+                  Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600
+                  метров,
+                  наградой
+                  будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+                <a class="description__button button" href="">купить тур сейчас</a>
+              </div>
+              <div class="description__wrapper">
+                <div class="description__img-wrapper">
+                  <picture>
+                    <source media="(max-width: 1023px)" srcset="img/greece-review-tablet.jpg">
+                    <img class="description__img" width="430" height="596" src="img/greece-review.jpg" alt="Фотография">
+                  </picture>
+                </div>
+                <blockquote class="description__review">
+                  <h3 class="description__review-title title">Отзывы</h3>
+                  <p class="description__review-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+                    Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение
+                    такое, как будто стоишь на краю света! </p>
+                  <div class="description__person-wrapper">
+                    <img class="description__review-photo" src="img/avatar/vlada.jpg" width="38" height="38" alt="Фотография Влады Голициной">
+                    <cite class="description__review-name">Влада Голицина</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="body__footer footer">1</footer>
+  <script>
+    let navMain = document.querySelector('.main-nav');
+    let navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>

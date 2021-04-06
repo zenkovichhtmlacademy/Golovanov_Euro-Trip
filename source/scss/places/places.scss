@@ -1,0 +1,156 @@
+.places {
+  background-color: $white;
+}
+
+.places > .container {
+  margin-bottom: 98px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 110px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.places__title {
+  width: 358px;
+  margin: 0 0 31px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+    margin: 0 0 22px;
+
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.places__text {
+  max-width: 328px;
+  margin: 0 0 55px;
+
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
+  color: rgba($lighter-black, 0.7%);
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto 38px;
+    width: 343px;
+
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin: 0 auto 17px;
+  }
+}
+
+.places__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px 60px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    gap: 19px 29px;
+  }
+
+  @media (max-width: $mobile-width) {
+    gap: 35px 29px;
+  }
+}
+
+.places__link {
+  position: relative;
+
+  display: block;
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.places__img {
+  width: 350px;
+  height: 430px;
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+.places__img-description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  width: 215px;
+  padding: 17px 5px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+  color: $lighter-black;
+
+  background-color: $white;
+}
+
+.places__link-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($black, 0.6%);
+}
+
+.places__link:hover .places__link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.places__link-details {
+  padding: 29px 23px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  color: $white;
+  text-transform: uppercase;
+
+  border: 1px solid rgba($white, 0.7%);
+}

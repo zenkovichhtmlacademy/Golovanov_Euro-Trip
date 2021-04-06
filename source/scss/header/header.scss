@@ -1,0 +1,35 @@
+.header__logo {
+  display: flex;
+}
+
+.header__logo-img {
+  @media (max-width: $tablet-width) {
+    width: 44px;
+    height: 17px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+
+  margin-left: auto;
+  padding-top: 4px;
+}
+
+.header__nav {
+  margin-right: 61px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.header__phone-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

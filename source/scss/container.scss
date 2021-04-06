@@ -1,0 +1,32 @@
+.container {
+  min-width: $desktop-min-width;
+  max-width: $desktop-width;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    min-width: $tablet-min-width;
+    max-width: $tablet-width;
+    padding: 0 21px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: $mobile-min-width;
+    max-width: $mobile-width;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+.container--names-margin {
+  margin-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
+}

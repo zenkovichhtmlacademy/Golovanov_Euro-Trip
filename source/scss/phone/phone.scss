@@ -1,0 +1,13 @@
+.phone__icon {
+  margin-right: 15px;
+}
+
+.phone__number {
+  font-size: 18px;
+  line-height: 32px;
+  color: $black;
+
+  &:hover {
+    color: $red;
+  }
+}

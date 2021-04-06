@@ -1,0 +1,18 @@
+.button {
+  display: block;
+
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: $white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $red;
+
+  &:hover,
+  &:active {
+    background-color: $orange;
+  }
+}

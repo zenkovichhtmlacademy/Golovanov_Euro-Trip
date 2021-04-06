@@ -1,0 +1,11 @@
+.main__about-us {
+  margin-bottom: 200px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 109px;
+  }
+}

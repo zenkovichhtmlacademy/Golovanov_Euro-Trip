@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+
+  padding-bottom: 33px;
+  margin: 0 0 31px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $lighter-black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 229px;
+    height: 4px;
+
+    background-color: $red;
+  }
+}

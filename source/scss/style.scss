@@ -1,0 +1,44 @@
+@import "variables";
+@import "normalize";
+
+// Шрифты
+@import "fonts";
+
+// Глобальные настройки и переменные
+@import "global";
+
+// Блок container
+@import "container";
+
+// Блок button
+@import "button";
+
+// Блок title
+@import "title";
+
+// Блок page
+@import "page/page";
+
+// Блок body
+@import "body/body";
+
+// Блок header
+@import "header/header";
+
+// Блок main-nav
+@import "main-nav/main-nav";
+
+// Блок phone
+@import "phone/phone";
+
+// Блок main
+@import "main/main";
+
+// Блок about-us
+@import "about-us/about-us";
+
+// Блок places
+@import "places/places";
+
+// Блок description
+@import "description/description";
