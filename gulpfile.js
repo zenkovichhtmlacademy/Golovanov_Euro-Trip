@@ -65,7 +65,7 @@ const images = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.svgo()
+      // imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"));
 }
@@ -96,7 +96,6 @@ const sprite = () => {
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
-    .pipe(gulp.dest("source/img"));
 }
 
 exports.sprite = sprite;
