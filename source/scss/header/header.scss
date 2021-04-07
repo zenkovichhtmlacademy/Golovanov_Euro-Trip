@@ -2,6 +2,13 @@
   display: flex;
 }
 
+.container--nojs .header__logo {
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+}
+
 .header__logo-img {
   @media (max-width: $tablet-width) {
     width: 44px;
@@ -14,6 +21,14 @@
 
   margin-left: auto;
   padding-top: 4px;
+}
+
+.container--nojs .header__wrapper {
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .header__nav {

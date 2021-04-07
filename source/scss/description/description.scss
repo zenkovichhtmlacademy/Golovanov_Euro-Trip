@@ -43,7 +43,7 @@
 }
 
 .description__item {
-  display: grid;
+  display: none;
   grid-template-columns: minmax(auto, 370px) 1fr;
   column-gap: 100px;
 
@@ -51,6 +51,18 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
   }
+}
+
+.description__item--current {
+  display: grid;
+}
+
+.description__list--nojs .description__item {
+  display: grid;
+}
+
+.description__list--nojs .description__item:not(:last-child) {
+  margin-bottom: 150px;
 }
 
 .description__title {
@@ -134,9 +146,15 @@
     justify-self: center;
     margin: 0 -21px;
   }
+
+  @media (max-width: $mobile-width) {
+    justify-self: center;
+    margin: 0 -16px;
+  }
 }
 
 .description__img {
+  display: block;
   width: 430px;
   height: 596px;
 

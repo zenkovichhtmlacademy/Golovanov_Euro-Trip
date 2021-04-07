@@ -125,6 +125,40 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  @media (max-width: $tablet-width) and (min-width: $tablet-min-width) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: flex;
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+}
+
+.main-nav--nojs .main-nav__item {
+  @media (max-width: $tablet-width) and (min-width: $tablet-min-width) {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.main-nav--nojs .main-nav__item:not(:last-child) {
+  @media (max-width: $tablet-width) and (min-width: $tablet-min-width) {
+    margin-right: 20px;
+  }
+}
+
 //.main-nav--closed .main-nav__toggle:active::before {
 //  background-color: fade(#ffffff, 30%);
 //  box-shadow: 0 8px 0 0 fade(#ffffff, 30%),

@@ -1,0 +1,14 @@
+.email__icon {
+  margin-top: 5px;
+  margin-right: 14px;
+}
+
+.email__address {
+  font-size: 14px;
+  line-height: 17px;
+  color: $red;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

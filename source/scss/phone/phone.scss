@@ -1,13 +1,57 @@
 .phone__icon {
+  stroke: $lighter-black;
+  margin-right: 15px;
+}
+
+.phone__icon--price {
+  stroke: $red;
+  margin-right: 27px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.phone__icon--footer {
+  stroke: $footer-border;
+
+  margin-left: 5px;
   margin-right: 15px;
 }
 
 .phone__number {
+  order: 1;
   font-size: 18px;
   line-height: 32px;
   color: $black;
 
   &:hover {
     color: $red;
+  }
+}
+
+.phone__number:hover + .phone__icon {
+  stroke: $red;
+}
+
+.phone__number--price {
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    text-decoration: underline;
+    color: $red;
+  }
+}
+
+.phone__number--footer {
+  font-size: 16px;
+  line-height: 32px;
+  color: $red;
+
+  &:hover {
+    text-decoration: none;
   }
 }

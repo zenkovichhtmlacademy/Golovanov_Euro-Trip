@@ -189,7 +189,7 @@ exports.default = gulp.series(
     html,
     stylesDev,
     sprite,
-    // scripts,
+    scripts,
   ),
   gulp.series(
     createWebP, server, watcher

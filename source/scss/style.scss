@@ -16,6 +16,18 @@
 // Блок title
 @import "title";
 
+// Блок input
+@import "input";
+
+// Блок visually-hidden
+@import "visually-hidden";
+
+// Блок phone
+@import "phone/phone";
+
+// Блок email
+@import "email/email";
+
 // Блок page
 @import "page/page";
 
@@ -28,9 +40,6 @@
 // Блок main-nav
 @import "main-nav/main-nav";
 
-// Блок phone
-@import "phone/phone";
-
 // Блок main
 @import "main/main";
 
@@ -42,3 +51,18 @@
 
 // Блок description
 @import "description/description";
+
+// Блок price
+@import "price/price";
+
+// Блок feedback
+@import "feedback/feedback";
+
+// Блок footer
+@import "footer/footer";
+
+// Блок modal
+@import "modal/modal";
+
+// Блок allert
+@import "allert/allert";

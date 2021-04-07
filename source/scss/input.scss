@@ -1,0 +1,68 @@
+.input__wrapper {
+  display: flex;
+}
+
+.input__extra {
+  display: flex;
+  height: 50px;
+  padding-left: 15px;
+
+  background-color: $white;
+  border: 1px solid rgba($lighter-black, 0.3%);
+  border-right: none;
+  border-radius: 0;
+
+  cursor: default;
+}
+
+.input__extra--invalid {
+  border-color: $red;
+}
+
+.input__required {
+  margin-right: 5px;
+
+  font-size: 15px;
+  color: $red;
+}
+
+.inpute__phone {
+  align-self: center;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $lighter-black;
+}
+
+.input__field {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: $lighter-black;
+
+  border: 1px solid rgba($lighter-black, 0.3%);
+  border-radius: 0;
+
+  &::placeholder {
+    color: $lighter-black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input__field--phone {
+  padding-left: 9px;
+}
+
+.input__field--invalid {
+  border-color: $red;
+}
+
+.input__extra + .input__field {
+  border-left: none;
+}
